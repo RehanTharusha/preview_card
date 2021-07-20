@@ -1,0 +1,110 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400,700;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%) ;
+    color: white;
+    font-size: 15px;
+    padding: 0;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    border-radius: 8px;
+}
+
+.section1{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section1 h2{
+    padding-top: 50px;
+    font-size: 45px;
+}
+
+.section1 p{
+    padding-right: 20px;
+    line-height: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    max-width:350px ;
+}
+
+.stats h3{
+    margin-bottom: 0;
+}
+
+.stats p{
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.stats_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats_container h3{
+    font-size: 25px;
+    font-weight: 5000;
+}
+ 
+.section2{
+    background: hsl(277, 40%, 50%);
+    border-radius: 8px;
+}
+
+.section2 img{
+    height: 100%;
+    mix-blend-mode: overlay;
+}
+
+@media (max-width: 600px){
+
+   .container{
+       max-width: 600px;
+       flex-direction: column-reverse;
+       text-align: center;
+       margin-bottom: 50px;
+       margin-top: 50px;
+   }
+
+   .section1 h2{
+    font-size: 2em;
+   } 
+
+   .stats_container{
+       flex-direction: column;
+       
+   }
+
+    .section2 img{
+       width: 100%;
+       height: 100%;
+    }   
+
+    .stats {
+        text-align: center;
+    }
+
+    .stats p{
+        padding-left: 15px;
+    }    
+}
